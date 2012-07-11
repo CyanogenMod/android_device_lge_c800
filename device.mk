@@ -8,3 +8,4 @@ $(call inherit-product-if-exists, vendor/lge/c800/device-vendor.mk)
 
 PRODUCT_COPY_FILES += \
     device/lge/c800/prebuilt/wireless.ko:system/lib/modules/wireless.ko
+

@@ -9,3 +9,4 @@ TARGET_KERNEL_CONFIG := cyanogen_c800_defconfig
 TARGET_PREBUILT_KERNEL := device/lge/c800/prebuilt/kernel
 
 TARGET_OTA_ASSERT_DEVICE:=c800
+
