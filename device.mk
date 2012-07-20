@@ -147,8 +147,6 @@ PRODUCT_COPY_FILES += \
     device/lge/c800/keychars/7k_handset.kcm.bin:system/usr/keychars/7k_handset.kcm.bin \
     device/lge/c800/keychars/atcmd_virtual_kbd.kcm.bin:system/usr/keychars/atcmd_virtual_kbd.kcm.bin \
     device/lge/c800/keychars/gpio-sidekey-device.kcm.bin:system/usr/keychars/gpio-sidekey-device.kcm.bin \
-    device/lge/c800/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-    device/lge/c800/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
     device/lge/c800/keychars/univa_q-keypad.kcm.bin:system/usr/keychars/univa_q-keypad.kcm.bin
 
 # Keylayouts
@@ -157,8 +155,7 @@ PRODUCT_COPY_FILES += \
     device/lge/c800/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
     device/lge/c800/keylayout/atcmd_virtual_kbd.kl:system/usr/keylayout/atcmd_virtual_kbd.kl \
     device/lge/c800/keylayout/gpio-sidekey-device.kl:system/usr/keylayout/gpio-sidekey-device.kl \
-    device/lge/c800/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-    device/lge/c800/keylayout/univa_q-keypad.kl:system/usr/keylayout/univa_q-keypad.kl \
+    device/lge/c800/keylayout/univa_q-keypad.kl:system/usr/keylayout/univa_q-keypad.kl 
 
 # BT/Wifi
 PRODUCT_COPY_FILES += \
@@ -172,7 +169,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lge/c800/recovery/rmt_storage/rmt_storage:/root/sbin/rmt_storage \
     device/lge/c800/misc/wallpaper:/root/sbin/wallpaper \
-    device/lge/c800/misc/initlogo.rle:root/initlogo.rle \
+    device/lge/c800/misc/initlogo.rle:root/initlogo.rle 
 
 # Offmode charging
 PRODUCT_PACKAGES += \

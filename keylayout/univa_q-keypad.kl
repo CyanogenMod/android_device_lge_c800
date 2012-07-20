@@ -14,7 +14,7 @@
 #
 
 # Function keys
-key 59    KEYBOARDMENU          WAKE
+key 59    MENU                  WAKE
 key 60    HOME                  WAKE
 key 61    CALL                  WAKE_DROPPED
 key 62    BACK                  WAKE_DROPPED
@@ -80,7 +80,7 @@ key 49    N                 WAKE_DROPPED
 key 50    M                 WAKE_DROPPED
 key 51    PICTSYMBOLS       WAKE_DROPPED
 key 52    EXPLORER          WAKE
-key 103   DOTCOM            WAKE_DROPPED
+key 103   MUSIC             WAKE_DROPPED 
 key 107   ENDCALL           WAKE_DROPPED
 
 # Row 6
@@ -92,7 +92,7 @@ key 151   MENU              WAKE_DROPPED
 key 57    SPACE             WAKE_DROPPED
 key 111   DEL               WAKE_DROPPED
 key 54    SHIFT_RIGHT       WAKE_DROPPED
-key 103   DOTCOM            WAKE_DROPPED
+key 103   MUSIC             WAKE_DROPPED
 key 105   HOME              WAKE
 key 108   SEARCH            WAKE
 key 106   SMILE             WAKE_DROPPED

@@ -32,10 +32,9 @@
 static pthread_once_t g_init = PTHREAD_ONCE_INIT;
 static pthread_mutex_t g_lock = PTHREAD_MUTEX_INITIALIZER;
 
-char const*const BUTTON_FILE = "/sys/devices/i2c-6/6-0055/pm8058-led/leds/button-backlight/brightness";
-char const*const KEYBOARD_FILE = "/sys/devices/i2c-6/6-0055/pm8058-led/leds/keyboard-backlight/brightness";
-char const*const LCD_BACKLIGHT_FILE = "/sys/devices/i2c-gpio.9/i2c-9/9-0038/leds/lcd-backlight/brightness";
-char const*const LCD_ONOFF_FILE = "/sys/devices/i2c-gpio.9/i2c-9/9-0038/backlight/lm3530-bl/bl_power";
+char const*const BUTTON_FILE = "/sys/class/leds/button-backlight/brightness";
+char const*const KEYBOARD_FILE = "/sys/class/leds/keyboard-backlight/brightness";
+char const*const LCD_BACKLIGHT_FILE = "/sys/class/leds/lcd-backlight/brightness";
 
 /**
  * Aux method, write int to file
