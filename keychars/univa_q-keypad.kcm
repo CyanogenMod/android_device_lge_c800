@@ -1,0 +1,228 @@
+#Univa Q/MyTouch Q/LGE C800 Physical Keyboard Keychar Map for Android 3.0+
+#by chui101
+
+type ALPHA
+
+####### ROW 1 #######
+# MENU Q W E R T Y U I O P DEL
+
+key Q {
+	label, base:		'q'
+	shift, capslock:	'Q'
+	alt, number:		'1'
+
+}
+
+key W {
+	label, base:		'w'
+	shift, capslock:	'W'
+	alt, number:		'2'
+
+}
+
+key E {
+	label, base:		'e'
+	shift, capslock:	'E'
+	alt, number:		'3'
+
+}
+
+key R {
+	label, base:		'r'
+	shift, capslock:	'R'
+	alt, number:		'4'
+
+}
+
+key T {
+	label, base:		't'
+	shift, capslock:	'T'
+	alt, number:		'5'
+
+}
+
+key Y {
+	label, base:		'y'
+	shift, capslock:	'Y'
+	alt, number:		'6'
+
+}
+
+key U {
+	label, base:		'u'
+	shift, capslock:	'U'
+	alt, number:		'7'
+
+}
+
+key I {
+	label, base:		'i'
+	shift, capslock:	'I'
+	alt, number:		'8'
+
+}
+
+key O {
+	label, base:		'o'
+	shift, capslock:	'O'
+	alt, number:		'9'
+
+}
+
+key P {
+	label, base:		'p'
+	shift, capslock:	'P'
+	alt, number:		'0'
+
+}
+
+
+####### ROW 2 #######
+# ENVELOPE A S D F G H J K L ENTER
+
+key A {
+	label, base:		'a'
+	shift, capslock:	'A'
+	alt, number:		'!'
+
+}
+
+key S {
+	label, base:		's'
+	shift, capslock:	'S'
+	alt, number:		'#'
+
+}
+
+key D {
+	label, base:		'd'
+	shift, capslock:	'D'
+	alt, number:		'$'
+
+}
+
+key F {
+	label, base:		'f'
+	shift, capslock:	'F'
+	alt, number:		'%'
+
+}
+
+key G {
+	label, base:		'g'
+	shift, capslock:	'G'
+	alt, number:		'^'
+
+}
+
+key H {
+	label, base:		'h'
+	shift, capslock:	'H'
+	alt, number:		'&'
+
+}
+
+key J {
+	label, base:		'j'
+	shift, capslock:	'J'
+	alt, number:		'*'
+
+}
+
+key K {
+	label, base:		'k'
+	shift, capslock:	'K'
+	alt, number:		'('
+
+}
+
+key L {
+	label, base:		'l'
+	shift, capslock:	'L'
+	alt, number:		')'
+
+}
+
+
+####### ROW 3 #######
+# LSHIFT Z X C V B N M AT PICTSYMBOLS RSHIFT
+
+key Z {
+	label, base:		'z'
+	shift, capslock:	'Z'
+	alt, number:		'_'
+
+}
+
+key X {
+	label, base:		'x'
+	shift, capslock:	'X'
+	alt, number:		'-'
+
+}
+
+key C {
+	label, base:		'c'
+	shift, capslock:	'C'
+	alt, number:		'+'
+
+}
+
+key V {
+	label, base:		'v'
+	shift, capslock:	'V'
+	alt, number:		'='
+
+}
+
+key B {
+	label, base:		'b'
+	shift, capslock:	'B'
+	alt, number:		'/'
+
+}
+
+key N {
+	label, base:		'n'
+	shift, capslock:	'N'
+	alt, number:		'\\'
+
+}
+
+key M {
+	label, base:		'm'
+	shift, capslock:	'M'
+	alt, number:		'\''
+
+}
+
+key AT {
+	label, base:		'@'
+	shift, capslock:	'@'
+	alt:				'\"'
+}
+
+key PICTSYMBOLS {
+	base:				fallback PICTSYMBOLS
+	alt, number:		'~'
+}
+
+####### ROW 4 #######
+# ALT SYM EXPLORER COMMA SPACE PERIOD QUESTION .COM(remapped to BOOKMARK) HOME SEARCH
+
+key SYM {
+	base:				'\uef01'
+}
+
+key COMMA {
+	label, base:		','
+	shift, capslock:	','
+	alt:				';'
+}
+
+key PERIOD {
+	label, base:		'.'
+	shift, capslock:	'.'
+	alt:				':'
+}
+

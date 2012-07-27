@@ -52,6 +52,12 @@ on early-fs
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
 
+	# AUDIO
+	chown system system /dev/lge_amp
+	chmod 0660 /dev/lge_amp
+    chown system audio /dev/msm_audio_misc
+    chmod 0660 /dev/msm_audio_misc
+
     # rmt-storage
     chown system system /sys/devices/platform/rs300000a7.65536/send_sync
 
@@ -65,13 +71,9 @@ on early-fs
     chown system system /sys/devices/platform/lge-ftm.0/qem
     chmod 0644 /sys/devices/platform/lge-ftm.0/qem
 
-    # LCD
-    #chown system system /sys/devices/platform/mddi_auo_hvga.0/show_reg_value
-    #chmod 0644 /sys/devices/platform/lcdc_lgdisplay_wvga.1/show_reg_value
-    #chown system system /sys/devices/platform/lcdc_lgdisplay_hvga.1/lcd_onoff
-    #chmod 0644 /sys/devices/platform/lcdc_lgdisplay_wvga.1/lcd_onoff
-    #chown system system /sys/devices/platform/lcdc_lgdisplay_hvga.1/write_flag
-    #chmod 0644 /sys/devices/platform/lcdc_lgdisplay_wvga.1/write_flag
+    # fb
+	chown system /dev/graphics/fb0
+	chmod 0664 /dev/graphics/fb0
 
     # Hidden reset for the kernel interface
     chmod 0664 /sys/module/lge_handle_panic/parameters/hidden_reset_enable

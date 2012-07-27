@@ -144,18 +144,18 @@ PRODUCT_COPY_FILES += \
 
 # Keychars
 PRODUCT_COPY_FILES += \
-    device/lge/c800/keychars/7k_handset.kcm.bin:system/usr/keychars/7k_handset.kcm.bin \
-    device/lge/c800/keychars/atcmd_virtual_kbd.kcm.bin:system/usr/keychars/atcmd_virtual_kbd.kcm.bin \
-    device/lge/c800/keychars/gpio-sidekey-device.kcm.bin:system/usr/keychars/gpio-sidekey-device.kcm.bin \
-    device/lge/c800/keychars/univa_q-keypad.kcm.bin:system/usr/keychars/univa_q-keypad.kcm.bin
+    device/lge/c800/keychars/gpio-sidekey-device.kcm:system/usr/keychars/gpio-sidekey-device.kcm \
+    device/lge/c800/keychars/univa_q-keypad.kcm:system/usr/keychars/univa_q-keypad.kcm \
+    device/lge/c800/keychars/qt602240_ts_input.kcm:system/usr/keychars/qt602240_ts_input.kcm
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/lge/c800/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/lge/c800/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
+    device/lge/c800/keylayout/qt602240_ts_input.kl:system/usr/keylayout/qt602240_ts_input.kl \
     device/lge/c800/keylayout/atcmd_virtual_kbd.kl:system/usr/keylayout/atcmd_virtual_kbd.kl \
-    device/lge/c800/keylayout/gpio-sidekey-device.kl:system/usr/keylayout/gpio-sidekey-device.kl \
-    device/lge/c800/keylayout/univa_q-keypad.kl:system/usr/keylayout/univa_q-keypad.kl 
+    device/lge/c800/keylayout/univa_q-keypad.kl:system/usr/keylayout/univa_q-keypad.kl \
+    device/lge/c800/keylayout/gpio-sidekey-device.kl:system/usr/keylayout/gpio-sidekey-device.kl
 
 # BT/Wifi
 PRODUCT_COPY_FILES += \

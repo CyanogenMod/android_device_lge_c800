@@ -1,3 +1,7 @@
-key 158   BACK              VIRTUAL
-key 102   HOME              VIRTUAL
+# LG Univa Q/MyTouch Q/C800 Softkey Keylayout
+# by chui101
+
 key 139   MENU              VIRTUAL
+key 102   HOME              VIRTUAL
+key 158   BACK              VIRTUAL
+key 186   SEARCH            VIRTUAL
