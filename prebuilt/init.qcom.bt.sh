@@ -24,18 +24,18 @@ failed ()
 
 start_hciattach ()
 {
-  echo 1 > $BLUETOOTH_SLEEP_PATH
   /system/bin/hciattach -n /dev/ttyHS0 any 4000000 flow &
   hciattach_pid=$!
   logi "start_hciattach: pid = $hciattach_pid"
+  echo 1 > $BLUETOOTH_SLEEP_PATH
 }
 
 kill_hciattach ()
 {
+  echo 0 > $BLUETOOTH_SLEEP_PATH
   logi "kill_hciattach: pid = $hciattach_pid"
   ## careful not to kill zero or null!
   kill -TERM $hciattach_pid
-  echo 0 > $BLUETOOTH_SLEEP_PATH
   # this shell doesn't exit now -- wait returns for normal exit
 }
 

@@ -48,7 +48,8 @@ key 52    EXPLORER          WAKE_DROPPED
 key 185   COMMA             WAKE_DROPPED
 key 57    SPACE             WAKE_DROPPED
 key 368   PERIOD            WAKE_DROPPED
-key 184   QUESTION          WAKE_DROPPED
+# key 184 is labled "?"
+key 184   SLASH             WAKE_DROPPED
 # key 103 is labeled ".com"
 key 103   BOOKMARK          WAKE_DROPPED
 key 105   HOME              WAKE

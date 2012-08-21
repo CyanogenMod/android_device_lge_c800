@@ -208,7 +208,7 @@ key PICTSYMBOLS {
 }
 
 ####### ROW 4 #######
-# ALT SYM EXPLORER COMMA SPACE PERIOD QUESTION .COM(remapped to BOOKMARK) HOME SEARCH
+# ALT SYM EXPLORER COMMA SPACE PERIOD QUESTION(remapped to SLASH) .COM(remapped to BOOKMARK) HOME SEARCH
 
 key SYM {
 	base:				'\uef01'
@@ -220,9 +220,22 @@ key COMMA {
 	alt:				';'
 }
 
+key SLASH {
+	label, base, shift, capslock, alt:		'?'
+}
+
+key SPACE {
+	label, base, shift, capslock:		' '
+	alt:								fallback TAB
+}
+
 key PERIOD {
 	label, base:		'.'
 	shift, capslock:	'.'
 	alt:				':'
 }
 
+key HOME {
+	base: 				fallback HOME
+	alt:				fallback APP_SWITCH
+}

@@ -27,7 +27,7 @@
 # inherit from the proprietary version
 -include vendor/lge/c800/BoardConfigVendor.mk
 
-USE_CAMERA_STUB := true
+USE_CAMERA_STUB := false
 
 TARGET_NO_BOOTLOADER := true
 
@@ -44,9 +44,9 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 TARGET_SPECIFIC_HEADER_PATH := device/lge/c800/include
 
+TARGET_OTA_ASSERT_DEVICE:=lgc800
 TARGET_BOOTLOADER_BOARD_NAME := lgc800
 
-TARGET_KERNEL_SOURCE := kernel/lge/msm7x30
 
 # Wifi related defines
 BOARD_WLAN_DEVICE := bcm4330
@@ -73,7 +73,7 @@ TARGET_QCOM_HDMI_OUT := false
 
 # qcom webkit
 TARGET_FORCE_CPU_UPLOAD := true
-DYNAMIC_SHARED_LIBV8SO := false
+DYNAMIC_SHARED_LIBV8SO := true
 
 BOARD_PREBUILT_LIBAUDIO := false
 BOARD_USES_QCOM_AUDIO_VOIPMUTE := false
@@ -96,12 +96,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 #BOARD_USE_CAF_LIBCAMERA := true
 #BOARD_OVERLAY_MINIFICATION_LIMIT := 2
 
-BOARD_KERNEL_CMDLINE := console=ttyMSM1 androidboot.hardware=lgc800
-BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE)
-
-BOARD_KERNEL_BASE := 0x00200000
-BOARD_KERNEL_PAGE_SIZE := 4096
-
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE :=473956352
@@ -122,8 +116,19 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Try to build the kernel
 TARGET_KERNEL_CONFIG := cyanogen_c800_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/msm7x30
 # Keep this as a fallback
 TARGET_PREBUILT_KERNEL := device/lge/c800/prebuilt/kernel
 
-TARGET_OTA_ASSERT_DEVICE:=lgc800
+BOARD_KERNEL_CMDLINE := console=ttyMSM1 androidboot.hardware=lgc800
+BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE)
+BOARD_KERNEL_BASE := 0x00200000
+BOARD_KERNEL_PAGE_SIZE := 4096
+
+
+# Recovery Graphics
+BOARD_CUSTOM_GRAPHICS := ../../../device/lge/c800/recovery/graphics.c
+# Recovery Keys
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../../device/lge/c800/recovery/recovery_keys.c
+
 
