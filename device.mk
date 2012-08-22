@@ -164,16 +164,41 @@ PRODUCT_PACKAGES += \
     hwaddrs.lgc800 \
     hcitool
 
-# The splashscreen
+# The splashscreen and charger program
 PRODUCT_COPY_FILES += \
     device/lge/c800/recovery/rmt_storage/rmt_storage:/root/sbin/rmt_storage \
     device/lge/c800/misc/wallpaper:/root/sbin/wallpaper \
-    device/lge/c800/misc/initlogo.rle:root/initlogo.rle 
+    device/lge/c800/misc/initlogo.rle:root/initlogo.rle \
+    device/lge/c800/misc/chargerlogo:root/sbin/chargerlogo \
+    device/lge/c800/misc/chargerimages/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
+    device/lge/c800/misc/chargerimages/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
+    device/lge/c800/misc/chargerimages/battery_ani_03.rle:root/chargerimages/battery_ani_03.rle \
+    device/lge/c800/misc/chargerimages/battery_ani_04.rle:root/chargerimages/battery_ani_04.rle \
+    device/lge/c800/misc/chargerimages/battery_ani_05.rle:root/chargerimages/battery_ani_05.rle \
+    device/lge/c800/misc/chargerimages/battery_bg.rle:root/chargerimages/battery_bg.rle \
+    device/lge/c800/misc/chargerimages/battery_bg_bk.rle:root/chargerimages/battery_bg_bk.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_02.rle:root/chargerimages/battery_charging_02.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_03.rle:root/chargerimages/battery_charging_03.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_04.rle:root/chargerimages/battery_charging_04.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_05.rle:root/chargerimages/battery_charging_05.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_06.rle:root/chargerimages/battery_charging_06.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_07.rle:root/chargerimages/battery_charging_07.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_08.rle:root/chargerimages/battery_charging_08.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_09.rle:root/chargerimages/battery_charging_09.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_10.rle:root/chargerimages/battery_charging_10.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_11.rle:root/chargerimages/battery_charging_11.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_12.rle:root/chargerimages/battery_charging_12.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_13.rle:root/chargerimages/battery_charging_13.rle \
+    device/lge/c800/misc/chargerimages/battery_charging_warning.rle:root/chargerimages/battery_charging_warning.rle \
+    device/lge/c800/misc/chargerimages/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
+    device/lge/c800/misc/chargerimages/battery_wait_ani_02.rle:root/chargerimages/battery_wait_ani_02.rle \
+    device/lge/c800/misc/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle
 
 # Offmode charging
-PRODUCT_PACKAGES += \
-    charger \
-    charger_res_images
+#PRODUCT_PACKAGES += \
+#    charger \
+#    charger_res_images
 
 # config files
 PRODUCT_COPY_FILES += \

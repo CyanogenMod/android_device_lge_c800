@@ -190,7 +190,7 @@ service ami304d /system/bin/ami304d
 service netmgrd /system/bin/netmgrd
     class core
 
-service chargerlogo /charger
+service chargerlogo /sbin/chargerlogo
     class charger
     user root
 

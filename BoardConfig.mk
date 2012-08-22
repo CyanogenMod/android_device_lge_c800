@@ -129,6 +129,6 @@ BOARD_KERNEL_PAGE_SIZE := 4096
 # Recovery Graphics
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/c800/recovery/graphics.c
 # Recovery Keys
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../../device/lge/c800/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/lge/c800/recovery/recovery_keys.c
 
 
