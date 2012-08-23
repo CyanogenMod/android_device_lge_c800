@@ -65,10 +65,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=dyn \
     debug.enabletr=true
 
-# Set default USB interface 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp 
-
 # Set default USB interface for first boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
@@ -164,7 +160,7 @@ PRODUCT_PACKAGES += \
     hwaddrs.lgc800 \
     hcitool
 
-# The splashscreen and charger program
+# The splashscreen and offmode charger program
 PRODUCT_COPY_FILES += \
     device/lge/c800/recovery/rmt_storage/rmt_storage:/root/sbin/rmt_storage \
     device/lge/c800/misc/wallpaper:/root/sbin/wallpaper \
@@ -194,11 +190,6 @@ PRODUCT_COPY_FILES += \
     device/lge/c800/misc/chargerimages/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
     device/lge/c800/misc/chargerimages/battery_wait_ani_02.rle:root/chargerimages/battery_wait_ani_02.rle \
     device/lge/c800/misc/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle
-
-# Offmode charging
-#PRODUCT_PACKAGES += \
-#    charger \
-#    charger_res_images
 
 # config files
 PRODUCT_COPY_FILES += \
