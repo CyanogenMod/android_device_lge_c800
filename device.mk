@@ -22,6 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_COPY_FILES += \
     device/lge/c800/init.lgc800.rc:root/init.lgc800.rc \
     device/lge/c800/init.lgc800.usb.rc:root/init.lgc800.usb.rc \
+    device/lge/c800/init.lgc800.usb.rc:recovery/root/usb.rc \
     device/lge/c800/ueventd.lgc800.rc:root/ueventd.lgc800.rc
 
 PRODUCT_COPY_FILES += \
@@ -64,6 +65,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=dyn \
     debug.enabletr=true
+
+# Set default USB interface, adb is added automatically 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp 		
 
 # Set default USB interface for first boot
 PRODUCT_COPY_FILES += \
