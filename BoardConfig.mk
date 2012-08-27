@@ -115,8 +115,8 @@ BOARD_USES_RECOVERY_CHARGEMODE := false
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG := cyanogen_c800_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/msm7x30
+# TARGET_KERNEL_CONFIG := cyanogen_c800_defconfig
+# TARGET_KERNEL_SOURCE := kernel/lge/msm7x30
 # Keep this as a fallback
 TARGET_PREBUILT_KERNEL := device/lge/c800/prebuilt/kernel
 
