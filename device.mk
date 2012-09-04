@@ -204,6 +204,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/c800/configs/vold.fstab:system/etc/vold.fstab
 
+# modules for prebuilt kernel
+PRODUCT_COPY_FILES += \
+    device/lge/c800/prebuilt/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+    device/lge/c800/prebuilt/modules/qce.ko:system/lib/modules/qce.ko \
+    device/lge/c800/prebuilt/modules/qcedev.ko:system/lib/modules/qcedev.ko \
+    device/lge/c800/prebuilt/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
+    device/lge/c800/prebuilt/modules/wireless.ko:system/lib/modules/wireless.ko
+    
+
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 #BOARD_WLAN_DEVICE_REV := bcm4330_b1
