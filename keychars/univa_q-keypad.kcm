@@ -143,6 +143,10 @@ key L {
 
 }
 
+key ENTER {
+	base, shift, capslock, alt, number: 	'\n'
+}
+
 
 ####### ROW 3 #######
 # LSHIFT Z X C V B N M AT PICTSYMBOLS RSHIFT
